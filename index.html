@@ -13,6 +13,12 @@
         body { font-family: 'Inter', sans-serif; }
         .gallery-img { transition: transform 0.5s ease, opacity 0.3s ease; }
         .gallery-card:hover .gallery-img { transform: scale(1.05); }
+        
+        /* Style for when a video is in fullscreen mode */
+        video:fullscreen {
+            object-fit: contain;
+            background-color: black;
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -33,9 +39,9 @@
         
         <!-- Header Text -->
         <div class="text-center mb-12 bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-sm w-full max-w-3xl mx-auto">
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Video Gallery</h1>
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Explore Our Gallery</h1>
             <p class="text-gray-500 text-sm max-w-2xl mx-auto">
-                astig ano fuck you kam
+                Browse through our curated collection of stunning properties and real estate highlights.
             </p>
         </div>
 
@@ -47,6 +53,7 @@
                 <div class="overflow-hidden h-64 relative">
                     <video src="src\raven.mp4" class="w-full h-full object-cover" loop playsinline></video>
                     
+                    <!-- Play/Pause Overlay -->
                     <div class="video-overlay absolute inset-0 bg-black/30 flex items-center justify-center cursor-pointer transition-all duration-300">
                         <button class="play-btn bg-white/90 hover:bg-white text-blue-600 rounded-full p-4 shadow-lg transform transition hover:scale-110 flex items-center justify-center">
                             <svg class="play-icon w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 24 24">
@@ -57,6 +64,13 @@
                             </svg>
                         </button>
                     </div>
+
+                    <!-- Fullscreen Button -->
+                    <button class="fullscreen-btn absolute top-3 right-3 bg-black/50 hover:bg-black/70 text-white rounded-lg p-2 transition z-10">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                        </svg>
+                    </button>
                 </div>
                 
                 <div class="p-6">
@@ -82,6 +96,12 @@
                             </svg>
                         </button>
                     </div>
+
+                    <button class="fullscreen-btn absolute top-3 right-3 bg-black/50 hover:bg-black/70 text-white rounded-lg p-2 transition z-10">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                        </svg>
+                    </button>
                 </div>
                 
                 <div class="p-6">
@@ -107,19 +127,25 @@
                             </svg>
                         </button>
                     </div>
+
+                    <button class="fullscreen-btn absolute top-3 right-3 bg-black/50 hover:bg-black/70 text-white rounded-lg p-2 transition z-10">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                        </svg>
+                    </button>
                 </div>
                 <div class="p-6">
                     <div class="text-xs text-gray-400 mb-2">
                         <span>Jan 26, 2026</span>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 leading-tight group-hover:text-blue-600 transition-colors">kan ronron maupay nga tingog</h3>
+                    <h3 class="text-lg font-bold text-gray-900 leading-tight group-hover:text-blue-600 transition-colors">Classic Ranch Style</h3>
                 </div>
             </article>
 
             <!-- Card 4 (Video) -->
             <article class="gallery-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 group">
                 <div class="overflow-hidden h-64 relative">
-                    <video src="src\ronkash.mp4" class="w-full h-full object-cover" loop playsinline></video>
+                    <video src="src\video4.mp4" class="w-full h-full object-cover" loop playsinline></video>
                     
                     <div class="video-overlay absolute inset-0 bg-black/30 flex items-center justify-center cursor-pointer transition-all duration-300">
                         <button class="play-btn bg-white/90 hover:bg-white text-blue-600 rounded-full p-4 shadow-lg transform transition hover:scale-110 flex items-center justify-center">
@@ -131,19 +157,25 @@
                             </svg>
                         </button>
                     </div>
+
+                    <button class="fullscreen-btn absolute top-3 right-3 bg-black/50 hover:bg-black/70 text-white rounded-lg p-2 transition z-10">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                        </svg>
+                    </button>
                 </div>
                 <div class="p-6">
                     <div class="text-xs text-gray-400 mb-2">
                         <span>Feb 02, 2026</span>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 leading-tight group-hover:text-blue-600 transition-colors">first time nira ha zyy</h3>
+                    <h3 class="text-lg font-bold text-gray-900 leading-tight group-hover:text-blue-600 transition-colors">Contemporary Villa</h3>
                 </div>
             </article>
 
              <!-- Card 5 (Video) -->
              <article class="gallery-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 group">
                 <div class="overflow-hidden h-64 relative">
-                    <video src="src\pamarigo.mp4" class="w-full h-full object-cover" loop playsinline></video>
+                    <video src="src\video5.mp4" class="w-full h-full object-cover" loop playsinline></video>
                     
                     <div class="video-overlay absolute inset-0 bg-black/30 flex items-center justify-center cursor-pointer transition-all duration-300">
                         <button class="play-btn bg-white/90 hover:bg-white text-blue-600 rounded-full p-4 shadow-lg transform transition hover:scale-110 flex items-center justify-center">
@@ -155,19 +187,25 @@
                             </svg>
                         </button>
                     </div>
+
+                    <button class="fullscreen-btn absolute top-3 right-3 bg-black/50 hover:bg-black/70 text-white rounded-lg p-2 transition z-10">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                        </svg>
+                    </button>
                 </div>
                 <div class="p-6">
                     <div class="text-xs text-gray-400 mb-2">
                         <span>Feb 10, 2026</span>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 leading-tight group-hover:text-blue-600 transition-colors">Liliputan</h3>
+                    <h3 class="text-lg font-bold text-gray-900 leading-tight group-hover:text-blue-600 transition-colors">Luxury Estate</h3>
                 </div>
             </article>
 
              <!-- Card 6 (Video) -->
              <article class="gallery-card bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 group">
                 <div class="overflow-hidden h-64 relative">
-                    <video src="src\liliputan.mp4" class="w-full h-full object-cover" loop playsinline></video>
+                    <video src="src\video6.mp4" class="w-full h-full object-cover" loop playsinline></video>
                     
                     <div class="video-overlay absolute inset-0 bg-black/30 flex items-center justify-center cursor-pointer transition-all duration-300">
                         <button class="play-btn bg-white/90 hover:bg-white text-blue-600 rounded-full p-4 shadow-lg transform transition hover:scale-110 flex items-center justify-center">
@@ -179,12 +217,18 @@
                             </svg>
                         </button>
                     </div>
+
+                    <button class="fullscreen-btn absolute top-3 right-3 bg-black/50 hover:bg-black/70 text-white rounded-lg p-2 transition z-10">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                        </svg>
+                    </button>
                 </div>
                 <div class="p-6">
                     <div class="text-xs text-gray-400 mb-2">
                         <span>Mar 05, 2026</span>
                     </div>
-                    <h3 class="text-lg font-bold text-gray-900 leading-tight group-hover:text-blue-600 transition-colors">50 lait dida an amot nira kash</h3>
+                    <h3 class="text-lg font-bold text-gray-900 leading-tight group-hover:text-blue-600 transition-colors">Renovated Interior</h3>
                 </div>
             </article>
 
@@ -194,6 +238,8 @@
     <!-- Single JavaScript to control ALL videos on the page -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            
+            // --- 1. Handle Play/Pause Overlays ---
             const overlays = document.querySelectorAll('.video-overlay');
 
             overlays.forEach(overlay => {
@@ -231,6 +277,28 @@
                     if (!video.paused) {
                         overlay.classList.remove('bg-black/30');
                         overlay.classList.add('bg-black/0');
+                    }
+                });
+            });
+
+            // --- 2. Handle Fullscreen Buttons ---
+            const fullscreenButtons = document.querySelectorAll('.fullscreen-btn');
+
+            fullscreenButtons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    // Prevent the click from also triggering the play/pause overlay
+                    event.stopPropagation(); 
+                    
+                    const card = button.closest('.gallery-card');
+                    const video = card.querySelector('video');
+
+                    // Check if the browser supports fullscreen
+                    if (video.requestFullscreen) {
+                        video.requestFullscreen();
+                    } else if (video.webkitRequestFullscreen) { // Safari
+                        video.webkitRequestFullscreen();
+                    } else if (video.msRequestFullscreen) { // IE11
+                        video.msRequestFullscreen();
                     }
                 });
             });
